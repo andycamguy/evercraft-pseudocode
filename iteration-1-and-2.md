@@ -33,7 +33,7 @@ the math for getting hit using probability from a d20
 The modifiers alongside a hit with the modifier table provided that is embedded into the system
 ### END
 
-## Fumctional
+## Functional
 ### Iteration 1 :: This iteration covers core functionality for leveling, combat, and character attributes.
 ```
 function CreateaCharacter {
@@ -94,7 +94,7 @@ xp gauge = lvl * 1000
 ```
 
 
-### Iteration 2
+### Iteration 2 Classes that a character can have.
 ```
-
+classes = ( "barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard")
 ```

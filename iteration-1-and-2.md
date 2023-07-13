@@ -33,7 +33,7 @@ The modifiers alongside a hit with the modifier table provided that is embedded 
 ### END
 
 ## Fumctional
-
+### Iteration 1
 ```
 function CanAttack {
 if attacking enemy -- does it hit within the paramters of a d20?
@@ -41,6 +41,20 @@ does the attack exceed the opponent's armor?
 if it does, it hits
 it it is a natural 20, it is a critical hit and doubles damage
 }
-```
 
+function CanDefend or GetRekt {
+if the character' armor is stronger than the attack from opponent --> no damage
+# probability is rng 1-20
+if the character's armor is less than the attack --> 1 point of damage
+
+if the roll from opponent is a 20 --> 2 points of damage
+}
+
+function ability modifier {
+-- invoke the can attack funtion
+-- invoke the ability function?
+based on the results, add or subtract damage using the Character's natural score 
+}
+```
+### Iteration 2
 

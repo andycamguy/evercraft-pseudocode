@@ -97,4 +97,34 @@ xp gauge = lvl * 1000
 ### Iteration 2 Classes that a character can have.
 ```
 classes = ( "barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard")
+# As a player I want a character to have a class that customizes its capabilities so that I can play more interesting characters
+function pick a class {
+input(pick a class or be a loser:)
+charcter.class  = input
+gain inherent values based on class
+
+invoke inherit class function
+
+}
+
+function inherit class{
+if class is within the classes array, add said values to the character values
+
+# Fighter // As a player I want to play a Fighter so that I can kick ass and take names
+add 5 hp to starting hp
+dice roll = dice roll +1
+
+# Rogue // As a player I want to play a Rogue so that I can defeat my enemies with finesse
+automatically sets alignment to either neutral or evil
+defender.dexterity.modifier = defender.dexterity
+strength.modifier = dexterity.modifier
+if roll = 20 damage is 3 times instead of 2 times
+
+# Monk // As a player I want to play a Monk so that I can enjoy being an Asian martial-arts archetype in a Medieval European setting
+
+
+
+
+
+}
 ```

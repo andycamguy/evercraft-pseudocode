@@ -15,6 +15,7 @@ Iteration 3 from the Everquest manual
 ### Won't Have
 * Starcraft
 * Fully working Campaign
+* a hard coded dice 
 
 ## Procedural Pseudocode
 
@@ -33,9 +34,22 @@ The modifiers alongside a hit with the modifier table provided that is embedded 
 ### END
 
 ## Fumctional
-### Iteration 1
+### Iteration 1 :: This iteration covers core functionality for leveling, combat, and character attributes.
 ```
+function CreateaCharacter {
+# As a character I want to have a name so that I can be distinguished from other characters
+# As a character I want to have an alignment so that I have something to guide my actions
+# As a combatant I want to have an armor class and hit points so that I can resist attacks from my enemies
+  if this is a character {
+    choose an alignment of good, neutral or evil
+    set the character armor as 10 and hitpoints as 5
+    }
+}
+
+
 function CanAttack {
+#As a combatant I want to be able to attack other combatants so that I can survive to fight another day
+
 if attacking enemy -- does it hit within the paramters of a d20?
 does the attack exceed the opponent's armor?
 if it does, it hits
@@ -43,18 +57,44 @@ it it is a natural 20, it is a critical hit and doubles damage
 }
 
 function CanDefend or GetRekt {
+#As an attacker I want to be able to damage my enemies so that they will die and I will live
+
 if the character' armor is stronger than the attack from opponent --> no damage
-# probability is rng 1-20
+    # probability is rng 1-20
 if the character's armor is less than the attack --> 1 point of damage
 
 if the roll from opponent is a 20 --> 2 points of damage
 }
 
 function ability modifier {
+# As a character I want to have several abilities so that I am not identical to other characters except in name
+# As a character I want to apply my ability modifiers improve my capabilities in combat so that I can vanquish my enemy with extreme prejudice
+
 -- invoke the can attack funtion
 -- invoke the ability function?
-based on the results, add or subtract damage using the Character's natural score 
+based on the results, add or subtract damage using the Character's natural score from the math formula :: Modifier = floor((Score - 10) / 2)
+ 
+  The math behind the modifier table involves a linear relationship between the score and the corresponding modifier. In this case, the relationship can be      described using a simple formula:
+
+
+}
+
+function gain experience {
+# As a character I want to accumulate experience points (xp) when I attack my enemies so that I can earn bragging rights at the tavern
+if opponent defender = dead
+experience = experience + the amount gained from the opponent (in this case 10 xp)
+}
+
+function level up{
+# As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes
+if lvl = 1
+xp gauge = lvl * 1000
+
 }
 ```
-### Iteration 2
 
+
+### Iteration 2
+```
+
+```

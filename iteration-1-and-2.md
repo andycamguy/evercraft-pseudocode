@@ -15,7 +15,7 @@ Iteration 3 from the Everquest manual
 ### Won't Have
 * Starcraft
 * Fully working Campaign
-* a hard coded dice 
+* a hard coded dice (thanks clayton jk)
 
 ## Procedural Pseudocode
 
@@ -111,7 +111,7 @@ function inherit class{
 if class is within the classes array, add said values to the character values
 
 # Fighter // As a player I want to play a Fighter so that I can kick ass and take names
-add 5 hp to starting hp
+10 add health per level up instead of 5 
 dice roll = dice roll +1
 
 # Rogue // As a player I want to play a Rogue so that I can defeat my enemies with finesse
@@ -121,6 +121,27 @@ strength.modifier = dexterity.modifier
 if roll = 20 damage is 3 times instead of 2 times
 
 # Monk // As a player I want to play a Monk so that I can enjoy being an Asian martial-arts archetype in a Medieval European setting
+6 add health per level up instead of 5
+
+if can attack {
+  3 points of damage instead of 1
+  }
+armor_class = wisdom.modifier only if it is greater than 0
+attack roll is increased by 1 every 2nd and 3rd level
+
+# Paladin // As a player I want to play a Paladin so that I can smite evil, write wrongs, and be a self-righteous jerk
+#The oath of throwing it back is great with us
+8 add health per level up instead of 5
++2 to attack and damage when attacking Evil characters
+does triple damage when critting on an Evil character (i.e. add the +2 bonus for a regular attack, and then triple that)
+attacks roll is increased by 1 for every level instead of every other level
+can only have Good alignment
+# Bard // As a player I want to play a Bard so that I can charm, inspire, and entertain my allies
+8 add health per level up instead of 5
+can cast one additional spell per level
+can use Bardic Inspiration ability twice as many times per short rest
+
+
 
 
 

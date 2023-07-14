@@ -199,13 +199,19 @@ self.level = level  # Default level is 1
         self.intelligence = intelligence
         self.charisma = charisma
     #Abilities Modifiers
-    def set_modifiers(self):
+    function set_modifiers:
         self.strength_mod = math.floor((self.strength - 10) / 2)
         self.dexterity_mod = math.floor((self.dexterity - 10) / 2)
         self.constitution_mod = math.floor((self.constitution - 10) / 2)
         self.wisdom_mod = math.floor((self.wisdom - 10) / 2)
         self.intelligence_mod = math.floor((self.intelligence - 10) / 2)
         self.charisma_mod = math.floor((self.charisma - 10) / 2)
+
+}
+Class Shaman is new Character: {
+inherits name attribute
+gives bonuses and modifies current default attributes
+adds stacking poison damage per level
 
 }
 ```

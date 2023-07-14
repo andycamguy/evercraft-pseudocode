@@ -177,4 +177,35 @@ can track creatures with advantage
 }
 ```
 ## Object Oriented Programming
+```
+class Character = {
+self.name = 'Leopold Ironfist'
+self.alignment = 'Neutral'
+self.armor = armor #Armor class = 10
+self.hitpoints = hitpoints #Hitpoints = 5
+self.can_attack = can_attack  # Default set to False
+self.damage = damage  # Default damage = 1
 
+# LEVELS
+self.current_xp = current_xp
+self.total_xp = total_xp
+self.level = level  # Default level is 1
+
+ #ABILITIES all DEFAULT to a Score of 10
+        self.strength = strength 
+        self.dexterity = dexterity
+        self.constitution = constitution
+        self.wisdom = wisdom
+        self.intelligence = intelligence
+        self.charisma = charisma
+    #Abilities Modifiers
+    def set_modifiers(self):
+        self.strength_mod = math.floor((self.strength - 10) / 2)
+        self.dexterity_mod = math.floor((self.dexterity - 10) / 2)
+        self.constitution_mod = math.floor((self.constitution - 10) / 2)
+        self.wisdom_mod = math.floor((self.wisdom - 10) / 2)
+        self.intelligence_mod = math.floor((self.intelligence - 10) / 2)
+        self.charisma_mod = math.floor((self.charisma - 10) / 2)
+
+}
+```
